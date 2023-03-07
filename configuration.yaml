@@ -1,0 +1,25 @@
+stations_url : 'https://celestrak.org/NORAD/elements/gp.php?GROUP=starlink&FORMAT=tle'
+# 星座名称
+name : starlink-1
+# 仿真开始结束时间
+startTime: 2023-3-1 00:00:00
+endTime: 2023-3-1 2:00:00
+# 时间间隔, 以ms为单位
+timescale: 10
+# epoch, 默认为startTime
+epoch:
+
+tle_save: true
+position_save: true
+# 离心率
+ecco: 0.0001
+# 近地点辐角
+argpo: 90
+# starlink一期为53°
+inclo: 53
+num_orbits: 72
+num_sats_per_orbits: 22
+f: 45
+# https://mp.weixin.qq.com/s?__biz=MzA3ODMxNTIxMA==&mid=2650609383&idx=1&sn=8a197bc0f3ce9b5e2fe2dad780346a85&chksm=874d1d42b03a9454e47314613fdc3fbb992a92365d020fc5b5b0a20d815b7b3aec428153df1a&scene=178&cur_album_id=1419058152745648128#rd
+
+mean_motion_loop_per_day: 15.06
