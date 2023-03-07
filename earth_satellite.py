@@ -132,6 +132,8 @@ def save_tles_to_file(sat_dict, file_name=''):
     if file_name is None or '':
         file_name = 'test'
     dir_path = './data/tles/'
+    if not os.path.exists(dir_path):
+        os.makedirs(dir_path)
     file_path = dir_path + time_str + '_' + file_name + '.txt'
 
     file = ''
